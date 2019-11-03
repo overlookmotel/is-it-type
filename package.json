@@ -13,11 +13,13 @@
   "bugs": {
     "url": "https://github.com/overlookmotel/is-it-type/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "core-util-is": "^1.0.2"
+  },
   "devDependencies": {
-    "@overlookmotel/eslint-config": "^4.3.2",
-    "@overlookmotel/eslint-config-jest": "^2.1.0",
-    "coveralls": "^3.0.6",
+    "@overlookmotel/eslint-config": "^5.0.1",
+    "@overlookmotel/eslint-config-jest": "^3.0.1",
+    "coveralls": "^3.0.7",
     "cross-env": "^6.0.3",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -25,7 +27,8 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^23.0.2",
     "eslint-plugin-node": "^10.0.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "jest-extended": "^0.11.2"
   },
   "keywords": [
     "is",
@@ -42,7 +45,7 @@
     "ci": "if [ $COVERAGE ]; then npm run coveralls; else npm test; fi"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=8.3.0"
   },
   "readmeFilename": "README.md",
   "license": "MIT"

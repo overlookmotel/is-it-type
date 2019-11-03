@@ -7,9 +7,38 @@
 
 # Determine type of a variable
 
+[core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras.
+
 ## Usage
 
-This module is under development and not ready for use yet.
+```js
+const {isString} = require('is-it-type');
+
+isString('abc'); // true
+```
+
+### From [core-util-is](https://www.npmjs.com/package/core-util-is):
+
+* `isArray`
+* `isBoolean`
+* `isNull`
+* `isNullOrUndefined`
+* `isNumber`
+* `isString`
+* `isSymbol`
+* `isUndefined`
+* `isRegExp`
+* `isObject`
+* `isDate`
+* `isError`
+* `isFunction`
+* `isPrimitive`
+* `isBuffer`
+
+### Additional functions
+
+* `isEmptyString` - `true` if `=== ''`
+* `isFullString` - `true` if a string which `!== ''`
 
 ## Tests
 
