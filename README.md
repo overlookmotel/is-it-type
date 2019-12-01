@@ -39,6 +39,7 @@ isString('abc'); // true
 
 * `isEmptyString` - `true` if `=== ''`
 * `isFullString` - `true` if a string which `!== ''`
+* `isEmptyObject` - `true` if passed object with no properties
 
 ## Tests
 
