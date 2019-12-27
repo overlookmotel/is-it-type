@@ -37,8 +37,21 @@ isString('abc'); // true
 
 ### Additional functions
 
+#### Strings
+
 * `isEmptyString` - `true` if `=== ''`
 * `isFullString` - `true` if a string which `!== ''`
+
+#### Numbers
+
+* `isInteger` - `true` if is an integer number
+* `isPositiveInteger` - `true` if is an integer number > 0
+* `isPositiveIntegerOrZero` - `true` if is an integer number >= 0
+* `isNegativeInteger` - `true` if is an integer number < 0
+* `isNegativeIntegerOrZero` - `true` if is an integer number <= 0
+
+#### Objects
+
 * `isEmptyObject` - `true` if passed object with no properties
 
 ## Tests
