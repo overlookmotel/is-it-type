@@ -6,8 +6,7 @@
 'use strict';
 
 // Modules
-const itIs = require('../index'),
-	{isEmptyString, isFullString, isEmptyObject} = itIs;
+const itIs = require('../index');
 
 // Tests
 
@@ -29,54 +28,8 @@ describe('Methods from core-util-is', () => { // eslint-disable-line jest/lowerc
 		'isPrimitive',
 		'isBuffer'
 	]) {
-		it(`${name}`, () => {
+		it(name, () => {
 			expect(itIs[name]).toBeFunction();
 		});
 	}
-});
-
-describe('isEmptyString', () => {
-	it("returns true for ''", () => {
-		expect(isEmptyString('')).toBe(true);
-	});
-
-	it("returns false for 'abc'", () => {
-		expect(isEmptyString('abc')).toBe(false);
-	});
-
-	it('returns false for null', () => {
-		expect(isEmptyString(null)).toBe(false);
-	});
-});
-
-describe('isFullString', () => {
-	it("returns true for 'abc'", () => {
-		expect(isFullString('abc')).toBe(true);
-	});
-
-	it("returns false for ''", () => {
-		expect(isFullString('')).toBe(false);
-	});
-
-	it('returns false for null', () => {
-		expect(isFullString(null)).toBe(false);
-	});
-});
-
-describe('isEmptyObject', () => {
-	it('returns true for {}', () => {
-		expect(isEmptyObject({})).toBe(true);
-	});
-
-	it('returns false for {a: 1}', () => {
-		expect(isEmptyObject({a: 1})).toBe(false);
-	});
-
-	it("returns false for ''", () => {
-		expect(isEmptyObject('')).toBe(false);
-	});
-
-	it('returns false for null', () => {
-		expect(isEmptyObject(null)).toBe(false);
-	});
 });
