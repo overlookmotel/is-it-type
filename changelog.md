@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.0
+
+Features:
+
+* Number methods
+
+Tests:
+
+* Split into multiple files
+
+Dev:
+
+* Update dev dependencies
+
 ## 1.1.2
 
 Docs:
