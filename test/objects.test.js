@@ -6,7 +6,7 @@
 'use strict';
 
 // Modules
-const {isEmptyObject} = require('../index');
+const {isEmptyObject} = require('../index.js');
 
 // Tests
 

@@ -6,7 +6,7 @@
 'use strict';
 
 // Modules
-const {isEmptyString, isFullString} = require('../index');
+const {isEmptyString, isFullString} = require('../index.js');
 
 // Tests
 

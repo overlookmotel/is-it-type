@@ -10,7 +10,7 @@ const {
 	isInteger,
 	isPositiveInteger, isPositiveIntegerOrZero,
 	isNegativeInteger, isNegativeIntegerOrZero
-} = require('../index');
+} = require('../index.js');
 
 // Tests
 

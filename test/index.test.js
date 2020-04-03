@@ -6,7 +6,7 @@
 'use strict';
 
 // Modules
-const itIs = require('../index');
+const itIs = require('../index.js');
 
 // Tests
 
