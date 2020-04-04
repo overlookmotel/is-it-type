@@ -28,7 +28,6 @@ module.exports = {
 			},
 			rules: {
 				'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}],
-				// Entry point references files in dist folder which only exist after build
 				'node/no-missing-import': 'off',
 				'node/no-unpublished-import': 'off',
 				'import/no-unresolved': 'off'
