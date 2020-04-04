@@ -11,9 +11,15 @@ All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is
 
 ## Usage
 
-```js
-const {isString} = require('is-it-type');
+### Import
 
+```js
+const { isString } = require('is-it-type');
+```
+
+### Use a method
+
+```js
 isString('abc'); // true
 ```
 
@@ -49,7 +55,7 @@ NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is no
 
 #### Numbers
 
-* `isInteger` - `true` if is an integer number
+* `isInteger` - `true` if is an integer number (positive, negative or zero)
 * `isPositiveInteger` - `true` if is an integer number > 0
 * `isPositiveIntegerOrZero` - `true` if is an integer number >= 0
 * `isNegativeInteger` - `true` if is an integer number < 0
