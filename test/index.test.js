@@ -25,8 +25,7 @@ describe('Methods from core-util-is', () => { // eslint-disable-line jest/lowerc
 		'isDate',
 		'isError',
 		'isFunction',
-		'isPrimitive',
-		'isBuffer'
+		'isPrimitive'
 	]) {
 		it(name, () => {
 			expect(itIs[name]).toBeFunction();

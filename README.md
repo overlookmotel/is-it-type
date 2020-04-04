@@ -7,7 +7,7 @@
 
 # Determine type of a variable
 
-[core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras.
+All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras.
 
 ## Usage
 
@@ -17,7 +17,11 @@ const {isString} = require('is-it-type');
 isString('abc'); // true
 ```
 
-### From [core-util-is](https://www.npmjs.com/package/core-util-is):
+All methods return `true` or `false`.
+
+## Methods
+
+### Same as [core-util-is](https://www.npmjs.com/package/core-util-is):
 
 * `isArray`
 * `isBoolean`
@@ -33,7 +37,8 @@ isString('abc'); // true
 * `isError`
 * `isFunction`
 * `isPrimitive`
-* `isBuffer`
+
+NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is not included.
 
 ### Additional functions
 
@@ -53,6 +58,10 @@ isString('abc'); // true
 #### Objects
 
 * `isEmptyObject` - `true` if passed object with no properties
+
+#### Other
+
+* `isType( type, input )` - `true` if `typeof input === type`
 
 ## Versioning
 
