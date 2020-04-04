@@ -88,8 +88,7 @@ export function isFullString(arg) {
 // Objects
 
 export function isEmptyObject(arg) {
-	if (!isObject(arg)) return false;
-	return Object.keys(arg).length === 0;
+	return isObject(arg) && Object.keys(arg).length === 0;
 }
 
 // Numbers
