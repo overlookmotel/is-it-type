@@ -7,7 +7,8 @@
 
 // Modules
 const babel = require('rollup-plugin-babel'),
-	{terser} = require('rollup-plugin-terser');
+	{terser} = require('rollup-plugin-terser'),
+	copy = require('rollup-plugin-copy');
 
 // Exports
 
@@ -50,7 +51,8 @@ function createConfig(format, env) {
 					? [['@babel/transform-runtime', {useESModules: isEsm}]]
 					: undefined
 			}),
-			isProduction ? terser() : undefined
+			isProduction ? terser() : undefined,
+			isEsm ? copy({targets: [{src: 'es/package.json', dest: 'dist/esm'}]}) : undefined
 		]
 	};
 }

@@ -20,7 +20,7 @@ const { isString } = require('is-it-type');
 or:
 
 ```js
-import { isString } from 'is-it-type/es';
+import { isString } from 'is-it-type';
 ```
 
 ### Use a method

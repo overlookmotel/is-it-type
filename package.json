@@ -4,6 +4,13 @@
   "description": "Determine type of a variable",
   "main": "index.js",
   "module": "es/index.js",
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./index.js"
+    },
+    "./es": "./es/index.js"
+  },
   "author": {
     "name": "Overlook Motel"
   },
@@ -36,6 +43,7 @@
     "jest-extended": "^0.11.5",
     "rollup": "^2.3.2",
     "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-terser": "^5.3.0"
   },
   "keywords": [
