@@ -1,6 +1,6 @@
 /* --------------------
  * is-it-type module
- * ESLint tests config
+ * ESLint src config
  * ------------------*/
 
 'use strict';

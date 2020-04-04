@@ -1,9 +1,10 @@
 /* --------------------
  * is-it-type module
+ * CJS Entry point
  * ------------------*/
 
 'use strict';
 
 // Exports
 
-module.exports = require('./lib/index.js');
+module.exports = require('./dist/cjs/is-it-type.js');

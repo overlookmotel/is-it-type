@@ -3,14 +3,14 @@
  * Tests for number methods
  * ------------------*/
 
-'use strict';
-
 // Modules
-const {
+/* eslint-disable import/no-unresolved, node/no-missing-import */
+import {
 	isInteger,
 	isPositiveInteger, isPositiveIntegerOrZero,
 	isNegativeInteger, isNegativeIntegerOrZero
-} = require('../index.js');
+} from 'is-it-type';
+/* eslint-enable import/no-unresolved, node/no-missing-import */
 
 // Tests
 

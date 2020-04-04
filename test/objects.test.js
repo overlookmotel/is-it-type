@@ -3,10 +3,9 @@
  * Tests for object methods
  * ------------------*/
 
-'use strict';
-
 // Modules
-const {isEmptyObject} = require('../index.js');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-import
+import {isEmptyObject} from 'is-it-type';
 
 // Tests
 

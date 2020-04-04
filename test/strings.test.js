@@ -3,10 +3,9 @@
  * Tests for string methods
  * ------------------*/
 
-'use strict';
-
 // Modules
-const {isEmptyString, isFullString} = require('../index.js');
+// eslint-disable-next-line import/no-unresolved, node/no-missing-import
+import {isEmptyString, isFullString} from 'is-it-type';
 
 // Tests
 

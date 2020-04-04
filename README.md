@@ -7,7 +7,7 @@
 
 # Determine type of a variable
 
-All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras.
+All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras, in both CJS and ES forms for use in Node.js or browser.
 
 ## Usage
 
@@ -15,6 +15,12 @@ All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is
 
 ```js
 const { isString } = require('is-it-type');
+```
+
+or:
+
+```js
+import { isString } from 'is-it-type/es';
 ```
 
 ### Use a method
