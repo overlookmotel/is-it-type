@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.1
+
+Bug fixes:
+
+* ESM export fully tree-shakable
+
 ## 3.1.0
 
 Features:
