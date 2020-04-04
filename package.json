@@ -11,6 +11,7 @@
     },
     "./es": "./es/index.js"
   },
+  "sideEffects": false,
   "author": {
     "name": "Overlook Motel"
   },
