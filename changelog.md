@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.1.0
+
+Features:
+
+* ESM import without `es` path
+
+Refactor:
+
+* Remove extraneous code
+
+Dev:
+
+* Improve config for running tests on ESM build
+
 ## 3.0.2
 
 Refactor:

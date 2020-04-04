@@ -1,6 +1,6 @@
 {
   "name": "is-it-type",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "Determine type of a variable",
   "main": "index.js",
   "module": "es/index.js",
