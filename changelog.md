@@ -1,5 +1,35 @@
 # Changelog
 
+## 3.0.0
+
+Breaking changes:
+
+* Remove `isBuffer` function
+* Re-implement core-util-is functions
+
+Features:
+
+* ESM exports
+
+Refactor:
+
+* Imports specify file extension
+
+Dev:
+
+* Update dev dependencies
+* ESLint not ignore dot files
+* Remove `npm-debug.log` from `.gitignore`
+
+No code:
+
+* Config files header comments
+* Line spacing
+
+Docs:
+
+* README update
+
 ## 2.0.0
 
 Breaking changes:
