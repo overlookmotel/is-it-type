@@ -15,7 +15,9 @@ module.exports = {
 	// Resolve `import from 'is-it-type'` to src or build, depending on env variable
 	moduleNameMapper: {
 		'^is-it-type$': resolvePath()
-	}
+	},
+	// Transform ESM helpers to CJS
+	transformIgnorePatterns: ['<rootDir>/node_modules/(?!@babel/runtime/helpers/esm/)']
 };
 
 function resolvePath() {
