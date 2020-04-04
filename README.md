@@ -7,7 +7,7 @@
 
 # Determine type of a variable
 
-All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras, in both CJS and ES forms for use in Node.js or browser.
+All the functions from [core-util-is](https://www.npmjs.com/package/core-util-is) plus a few extras, in both CJS and ESM formats for use in Node.js or browser.
 
 ## Usage
 
