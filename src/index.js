@@ -8,6 +8,7 @@
 /*
  * Replication of core-util-is methods.
  * https://www.npmjs.com/package/core-util-is
+ * NB `isBuffer()` is omitted and `isObject()` is different from `core-util-is`'s implementation
  */
 
 export function isArray(arg) {
@@ -46,10 +47,6 @@ export function isRegExp(arg) {
 	return isTypeByToString('RegExp', arg);
 }
 
-export function isObject(arg) {
-	return isType('object', arg) && !isNull(arg);
-}
-
 export function isDate(arg) {
 	return isTypeByToString('Date', arg);
 }
@@ -86,6 +83,10 @@ export function isFullString(arg) {
 }
 
 // Objects
+
+export function isObject(arg) {
+	return isType('object', arg) && !isNull(arg) && isTypeByToString('Object', arg);
+}
 
 export function isEmptyObject(arg) {
 	return isObject(arg) && Object.keys(arg).length === 0;

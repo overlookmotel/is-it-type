@@ -44,13 +44,12 @@ All methods return `true` or `false`.
 * `isSymbol`
 * `isUndefined`
 * `isRegExp`
-* `isObject`
 * `isDate`
 * `isError`
 * `isFunction`
 * `isPrimitive`
 
-NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is not included.
+NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is not included. `isObject` method differs from [core-util-is](https://www.npmjs.com/package/core-util-is)'s method of same name (see [below](#objects)).
 
 ### Additional functions
 
@@ -69,6 +68,7 @@ NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is no
 
 #### Objects
 
+* `isObject` - `true` if passed object (not including arrays, regexps and other built-ins)
 * `isEmptyObject` - `true` if passed object with no properties
 
 #### Other
