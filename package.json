@@ -4,6 +4,11 @@
   "description": "Determine type of a variable",
   "main": "index.js",
   "module": "es/index.js",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.map",
+    "es/**/*.js"
+  ],
   "exports": {
     ".": {
       "import": "./es/index.js",
