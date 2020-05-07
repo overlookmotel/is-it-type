@@ -19,7 +19,7 @@ import {
 	isError,
 	isFunction,
 	isPrimitive
-} from 'is-it-type'; // eslint-disable-line import/no-unresolved, node/no-missing-import
+} from 'is-it-type';
 
 // Tests
 

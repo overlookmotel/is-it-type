@@ -17,7 +17,9 @@ module.exports = {
 			sourceType: 'module'
 		},
 		rules: {
-			'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}]
+			'node/no-unsupported-features/es-syntax': ['error', {ignores: ['modules']}],
+			'import/no-unresolved': ['error', {ignore: ['^is-it-type$']}],
+			'node/no-missing-import': ['error', {allowModules: ['is-it-type']}]
 		}
 	}]
 };
