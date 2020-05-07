@@ -1,5 +1,31 @@
 # Changelog
 
+## 4.0.0
+
+Breaking changes:
+
+* `isObject` returns false for arrays and other built-ins
+
+Dependencies:
+
+* Update `@babel/runtime` dependency
+
+No code:
+
+* Remove duplicate code comment
+
+Tests:
+
+* Run coverage in dev mode
+* Move ESLint config into config file [nocode]
+
+Dev:
+
+* Run tests on CI on Node v14
+* Update dev dependencies
+* `.editorconfig` config
+* Replace `.npmignore` with `files` list in `package.json`
+
 ## 3.1.1
 
 Bug fixes:
