@@ -46,7 +46,7 @@ describe('isInteger', () => {
 	});
 
 	it('returns false for object', () => {
-		expect(isInteger(true)).toBe(false);
+		expect(isInteger({})).toBe(false);
 	});
 });
 
