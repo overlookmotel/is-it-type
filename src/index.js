@@ -120,6 +120,10 @@ export function isType(type, arg) {
 	return getType(arg) === type;
 }
 
+export function isArguments(arg) {
+	return isTypeByToString('Arguments', arg);
+}
+
 /*
  * Helpers
  */
