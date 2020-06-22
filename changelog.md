@@ -1,5 +1,25 @@
 # Changelog
 
+## 4.1.0
+
+Features:
+
+* `isArguments` method
+* Drop support for Node v13
+
+Dependencies:
+
+* Update `@babel/runtime` dependency
+
+Tests:
+
+* Correct test [fix]
+
+Dev:
+
+* Update dev dependencies
+* Simplify lint scripts
+
 ## 4.0.0
 
 Breaking changes:
