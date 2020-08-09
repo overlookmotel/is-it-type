@@ -1,5 +1,19 @@
 # Changelog
 
+## 4.1.1
+
+Build:
+
+* Fix Rollup config [fix]
+
+Deps:
+
+* Update `@babel/runtime` dependency
+
+Dev:
+
+* Update dev dependencies
+
 ## 4.1.0
 
 Features:
