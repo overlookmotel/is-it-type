@@ -97,6 +97,14 @@ describe('isObject', () => {
 		expect(isObject(Symbol())).toBe(false); // eslint-disable-line symbol-description
 	});
 
+	it('returns false for Map', () => {
+		expect(isObject(new Map())).toBe(false);
+	});
+
+	it('returns false for Set', () => {
+		expect(isObject(new Set())).toBe(false);
+	});
+
 	it('returns false for true', () => {
 		expect(isObject(true)).toBe(false);
 	});

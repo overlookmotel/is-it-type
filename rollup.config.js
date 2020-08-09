@@ -6,7 +6,10 @@
 'use strict';
 
 // Modules
-const babel = require('rollup-plugin-babel'),
+const pathJoin = require('path').join,
+	nodeResolve = require('@rollup/plugin-node-resolve').default,
+	commonjs = require('@rollup/plugin-commonjs'),
+	babel = require('rollup-plugin-babel'),
 	{terser} = require('rollup-plugin-terser'),
 	copy = require('rollup-plugin-copy');
 
@@ -41,6 +44,7 @@ function createConfig(format, env) {
 			format,
 			sourcemap: true
 		},
+		external: isUmd ? [] : isExternalModule,
 		plugins: [
 			babel({
 				exclude: /node_modules/,
@@ -51,10 +55,16 @@ function createConfig(format, env) {
 					? [['@babel/transform-runtime', {useESModules: isEsm}]]
 					: undefined
 			}),
+			isUmd ? nodeResolve() : undefined,
+			isUmd ? commonjs({include: /node_modules/}) : undefined,
 			isProduction ? terser() : undefined,
 			isEsm ? copy({targets: [{src: 'es/package.json', dest: 'dist/esm'}]}) : undefined
 		]
 	};
+}
+
+function isExternalModule(moduleId) {
+	return !moduleId.startsWith('.') && !moduleId.startsWith(pathJoin(__dirname, 'src'));
 }
 
 function getFormats(allFormats) {

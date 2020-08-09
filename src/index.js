@@ -3,6 +3,9 @@
  * Entry point
  * ------------------*/
 
+// Modules
+import getGlobalThis from 'globalthis';
+
 // Exports
 
 /*
@@ -84,8 +87,36 @@ export function isFullString(arg) {
 
 // Objects
 
+const {getPrototypeOf} = Object,
+	ObjectPrototype = Object.prototype,
+	globalThis = getGlobalThis(),
+	TypedArrayProto = typeof Uint8Array !== 'undefined'
+		? getPrototypeOf(Uint8Array.prototype)
+		: undefined;
+
 export function isObject(arg) {
-	return isType('object', arg) && !isNull(arg) && isTypeByToString('Object', arg);
+	if (!isType('object', arg) || isNull(arg)) return false;
+
+	let proto = getPrototypeOf(arg);
+	if (proto === null || proto === ObjectPrototype) return true;
+	if (proto === TypedArrayProto) return false;
+
+	while (true) { // eslint-disable-line no-constant-condition
+		const nextProto = getPrototypeOf(proto);
+		if (nextProto === null) return true;
+		if (nextProto === ObjectPrototype) break;
+		if (nextProto === TypedArrayProto) return false;
+		proto = nextProto;
+	}
+
+	return ![
+		'Function', 'Array', 'Number', 'Boolean', 'String', 'Symbol', 'Date', 'Promise', 'RegExp', 'Error',
+		'ArrayBuffer', 'DataView', 'Map', 'BigInt', 'Set', 'WeakMap', 'WeakSet', 'SharedArrayBuffer',
+		'FinalizationRegistry', 'WeakRef', 'URL', 'URLSearchParams', 'TextEncoder', 'TextDecoder'
+	].find((ctorName) => {
+		const ctor = globalThis[ctorName];
+		return ctor && proto === ctor.prototype;
+	});
 }
 
 export function isEmptyObject(arg) {
