@@ -23,7 +23,7 @@ import {
 
 // Tests
 
-describe('Methods from core-util-is', () => { // eslint-disable-line jest/lowercase-name
+describe('Methods from core-util-is', () => {
 	for (const fn of [
 		isArray,
 		isBoolean,
