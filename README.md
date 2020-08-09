@@ -73,7 +73,6 @@ NB [core-util-is](https://www.npmjs.com/package/core-util-is)'s `isBuffer` is no
 
 #### Other
 
-* `isArguments` - `true` if is an arguments object
 * `isType( type, input )` - `true` if `typeof input === type`
 
 ## Versioning
