@@ -37,7 +37,7 @@ function createConfig(format, env) {
 		input: 'src/index.js',
 		output: {
 			file: `dist/${format}/is-it-type${isProduction ? '.min' : ''}.js`,
-			name: '{{nameCamel}}',
+			name: 'isItType',
 			format,
 			sourcemap: true
 		},
