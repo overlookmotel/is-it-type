@@ -47,15 +47,15 @@ export function isSymbol(arg) {
 }
 
 export function isRegExp(arg) {
-	return isTypeByToString('RegExp', arg);
+	return arg instanceof RegExp;
 }
 
 export function isDate(arg) {
-	return isTypeByToString('Date', arg);
+	return arg instanceof Date;
 }
 
 export function isError(arg) {
-	return isTypeByToString('Error', arg) || arg instanceof Error;
+	return arg instanceof Error;
 }
 
 export function isFunction(arg) {
@@ -157,9 +157,4 @@ export function isType(type, arg) {
 
 function getType(arg) {
 	return typeof arg;
-}
-
-const {toString} = Object.prototype;
-function isTypeByToString(type, arg) {
-	return toString.call(arg) === `[object ${type}]`;
 }
