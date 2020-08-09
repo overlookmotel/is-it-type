@@ -1,5 +1,16 @@
 # Changelog
 
+## 5.0.0
+
+Breaking changes:
+
+* Remove `isArguments` method
+* `isObject` return false for all built-ins
+
+Bug fixes:
+
+* Avoid relying on `Object.prototype.toString` to identify types
+
 ## 4.1.1
 
 Build:
