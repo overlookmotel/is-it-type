@@ -28,7 +28,7 @@
     "url": "https://github.com/overlookmotel/is-it-type/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.10.3"
+    "@babel/runtime": "^7.11.2"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
