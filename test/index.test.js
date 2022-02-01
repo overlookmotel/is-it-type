@@ -40,7 +40,7 @@ describe('Methods from core-util-is', () => {
 		isFunction,
 		isPrimitive
 	]) {
-		it(fn.name, () => {
+		it(fn.name, () => { // eslint-disable-line jest/valid-title
 			expect(fn).toBeFunction();
 		});
 	}

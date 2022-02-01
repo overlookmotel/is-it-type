@@ -11,7 +11,7 @@ module.exports = {
 	testEnvironment: 'node',
 	coverageDirectory: 'coverage',
 	collectCoverageFrom: ['src/**/*.js'],
-	setupFilesAfterEnv: ['jest-extended'],
+	setupFilesAfterEnv: ['jest-extended/all'],
 	// Resolve `import from 'is-it-type'` to src or build, depending on env variable
 	moduleNameMapper: {
 		'^is-it-type$': resolvePath()
