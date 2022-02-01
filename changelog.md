@@ -1,5 +1,7 @@
 # Changelog
 
+## 5.1.0
+
 Semver minor:
 
 * Drop support for Node v10
