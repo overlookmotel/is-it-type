@@ -1,5 +1,31 @@
 # Changelog
 
+Semver minor:
+
+* Drop support for Node v10
+
+Performance:
+
+* Speed up `isObject`
+* Export `Array.isArray` directly
+
+Dependencies:
+
+* Update dependencies
+
+Dev:
+
+* Use NPM v7 for development
+* Use Github Actions for CI
+* Clean up after `cover` NPM script even if fails
+* Update dev dependencies
+
+Docs:
+
+* Remove Greenkeeper badge
+* Update license year
+* Remove license indentation
+
 ## 5.0.0
 
 Breaking changes:
