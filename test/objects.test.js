@@ -6,6 +6,10 @@
 // Modules
 import {isObject, isEmptyObject} from 'is-it-type';
 
+// Workaround Jest patching native objects in test environment
+// Similar problem to https://github.com/facebook/jest/issues/10854
+Object.setPrototypeOf(Object.getPrototypeOf(Uint8Array.prototype), Object.prototype);
+
 // Tests
 
 describe('isObject', () => {
@@ -91,6 +95,14 @@ describe('isObject', () => {
 
 	it('returns false for zero-length Buffer', () => {
 		expect(isObject(Buffer.alloc(0))).toBe(false);
+	});
+
+	it('returns false for Uint8Array', () => {
+		expect(isObject(new Uint8Array(10))).toBe(false);
+	});
+
+	it('returns false for zero-length Uint8Array', () => {
+		expect(isObject(new Uint8Array(0))).toBe(false);
 	});
 
 	it('returns false for Symbol', () => {
