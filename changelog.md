@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.1.1
+
+Docs:
+
+* Fix changelog
+
 ## 5.1.0
 
 Semver minor:
