@@ -14,9 +14,7 @@ import getGlobalThis from 'globalthis';
  * NB `isBuffer()` is omitted and `isObject()` is different from `core-util-is`'s implementation
  */
 
-export function isArray(arg) {
-	return Array.isArray(arg);
-}
+export const {isArray} = Array;
 
 export function isBoolean(arg) {
 	return isType('boolean', arg);
