@@ -2,7 +2,6 @@
 [![Build Status](https://img.shields.io/travis/overlookmotel/is-it-type/master.svg)](http://travis-ci.org/overlookmotel/is-it-type)
 [![Dependency Status](https://img.shields.io/david/overlookmotel/is-it-type.svg)](https://david-dm.org/overlookmotel/is-it-type)
 [![Dev dependency Status](https://img.shields.io/david/dev/overlookmotel/is-it-type.svg)](https://david-dm.org/overlookmotel/is-it-type)
-[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/is-it-type.svg)](https://greenkeeper.io/)
 [![Coverage Status](https://img.shields.io/coveralls/overlookmotel/is-it-type/master.svg)](https://coveralls.io/r/overlookmotel/is-it-type)
 
 # Determine type of a variable
