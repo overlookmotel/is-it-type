@@ -7,7 +7,8 @@
   "files": [
     "dist/**/*.js",
     "dist/**/*.map",
-    "es/**/*.js"
+    "es/**/*.js",
+    "**/package.json"
   ],
   "exports": {
     ".": {
