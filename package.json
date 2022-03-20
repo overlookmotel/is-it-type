@@ -1,13 +1,14 @@
 {
   "name": "is-it-type",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "description": "Determine type of a variable",
   "main": "index.js",
   "module": "es/index.js",
   "files": [
     "dist/**/*.js",
     "dist/**/*.map",
-    "es/**/*.js"
+    "es/**/*.js",
+    "**/package.json"
   ],
   "exports": {
     ".": {
@@ -28,7 +29,7 @@
     "url": "https://github.com/overlookmotel/is-it-type/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.16.7",
+    "@babel/runtime": "^7.17.8",
     "globalthis": "^1.0.2"
   },
   "devDependencies": {
