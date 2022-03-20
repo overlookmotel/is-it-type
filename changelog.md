@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.1.2
+
+Bug fixes:
+
+* Publish `package.json` file in ESM dirs to NPM
+
 ## 5.1.1
 
 Docs:
