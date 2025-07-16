@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.1.3
+
+Dependencies:
+
+* Remove `@babel/runtime` dependency (#41)
+* Update `package-lock.json` (#42)
+
 ## 5.1.2
 
 Bug fixes:
